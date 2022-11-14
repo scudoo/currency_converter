@@ -1,4 +1,10 @@
 # currency-converter by scudo
+
+## Demo
+https://scudoo.github.io/currency_converter/
+
+## Description
+
 This is my first project uploaded to web using GitHub Pages. It's extremely simple as I'm just beginning my adventure with front-end. 
 
 I **don't** consider updating this project in the future as I'm going to create new ones with more advanced code and structure. 
