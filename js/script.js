@@ -11,7 +11,7 @@ submitElement.addEventListener("click", (event) => {
 
     let rate = selectElement.value;
     let baseCurrency = inputElement.value;
-    let result = baseCurrency * rate;
+    let result = baseCurrency / rate;
     let currency;
 
     switch (rate) {
