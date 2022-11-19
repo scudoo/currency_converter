@@ -1,4 +1,4 @@
-# currency-converter by scudo
+# currency-converter by Mikołaj
 
 ## Demo
 https://scudoo.github.io/currency_converter/
