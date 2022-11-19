@@ -1,4 +1,4 @@
-const calculateResult = (event) => { 
+{const calculateResult = (event) => { 
     event.preventDefault();
     const inputElement = document.querySelector(".js-labelInput");
     const selectElement = document.querySelector(".js-labelSelect");
@@ -31,4 +31,4 @@ const init = () => {
     submitElement.addEventListener("click", calculateResult);
 }
 
-init();
+init();}
