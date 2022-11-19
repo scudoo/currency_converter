@@ -1,18 +1,11 @@
-let formElement = document.querySelector(".js-form");
-let inputElement = document.querySelector(".js-labelInput");
-let selectElement = document.querySelector(".js-labelSelect");
-let submitElement = document.querySelector(".js-submit");
-let resultElement = document.querySelector(".js-result");
-
-
-
-submitElement.addEventListener("click", (event) => {
+const calculateResult = (event) => { 
     event.preventDefault();
-
-    let rate = selectElement.value;
-    let baseCurrency = inputElement.value;
-    let result = baseCurrency / rate;
+    const inputElement = document.querySelector(".js-labelInput");
+    const selectElement = document.querySelector(".js-labelSelect");
+    const result = inputElement.value / selectElement.value;   
+    const resultElement = document.querySelector(".js-result");
     let currency;
+    let rate = selectElement.value;
 
     switch (rate) {
         case "4.55":
@@ -30,18 +23,12 @@ submitElement.addEventListener("click", (event) => {
         default:
             currency = "";
     }
-
-    console.log(currency);
-
-    if(inputElement.value === "") {
-        return;
-    }
-
     resultElement.innerText = `${inputElement.value} PLN = ${result.toFixed(2)} ${currency}`;
-})
+};
 
+const init = () => {
+    const submitElement = document.querySelector(".js-submit");
+    submitElement.addEventListener("click", calculateResult);
+}
 
-
-
-
-
+init();
